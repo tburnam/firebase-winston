@@ -4,3 +4,10 @@ node_js:
 - lts/*
 cache: yarn
 after_success: yarn coverage
+deploy:
+  on:
+    node: node
+    branch: npm
+  provider: npm
+  email: bram@bram.codes
+  api_key: $NPM_TOKEN
