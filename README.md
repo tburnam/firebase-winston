@@ -19,7 +19,7 @@ winston.add(FirebaseLogger, { ref: db.ref('logs') });
 winston.log('info', 'This is a message', { anything: 'This is metadata' })
 ```
 
-![Firebase Realtime Database](https://raw.githubusercontent.com/bram-codes/firebase-winston/4f238edab4a779f3fe71345e4876710aa72e816b/screenshot-options.png)
+![Firebase Realtime Database](https://raw.githubusercontent.com/bram-codes/firebase-winston/4f238edab4a779f3fe71345e4876710aa72e816b/screenshot-usage.png)
 
 ## Options
 
@@ -35,4 +35,4 @@ winston.add(FirebaseLogger, {
 winston.log('error', 'Something went wrong', { anything: 'This is metadata', my_key: 123 })
 ```
 
-![Firebase Realtime Database](https://raw.githubusercontent.com/bram-codes/firebase-winston/4f238edab4a779f3fe71345e4876710aa72e816b/screenshot-usage.png)
+![Firebase Realtime Database](https://raw.githubusercontent.com/bram-codes/firebase-winston/4f238edab4a779f3fe71345e4876710aa72e816b/screenshot-options.png)
