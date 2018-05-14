@@ -1,8 +1,21 @@
 {
-  "name": "firebase-winston",
-  "version": "1.0.0",
-  "description": "A Firebase transport for Winston",
-  "main": "index.js",
-  "author": "Bram <bram@bram.codes>",
-  "license": "MIT"
+	"name": "firebase-winston",
+	"version": "0.1.0",
+	"description": "A Firebase transport for Winston",
+	"main": "index.js",
+	"author": "Bram <bram@bram.codes>",
+	"license": "MIT",
+	"scripts": {
+		"test": "nyc ava test.js",
+		"coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+	},
+	"dependencies": {
+		"winston": "^2.4.2"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"codecov": "^3.0.2",
+		"firebase-admin": "^5.12.0",
+		"nyc": "^11.7.3"
+	}
 }
