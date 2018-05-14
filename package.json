@@ -1,0 +1,8 @@
+{
+  "name": "firebase-winston",
+  "version": "1.0.0",
+  "description": "A Firebase transport for Winston",
+  "main": "index.js",
+  "author": "Bram <bram@bram.codes>",
+  "license": "MIT"
+}
