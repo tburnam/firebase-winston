@@ -1,15 +1,20 @@
 const test = require('ava');
 const winston = require('winston');
-const admin = require('firebase-admin');
+const firebase = require('firebase');
+require('firebase/database');
 const FirebaseLogger = require('./index');
 
-const config = require('./config');
+const config = {
+	apiKey: "AIzaSyAd7e_jmJ0ApbM4c3hJo-m0KuZffX6jZPU",
+	authDomain: "bram-codes-tests.firebaseapp.com",
+	databaseURL: "https://bram-codes-tests.firebaseio.com",
+	projectId: "bram-codes-tests",
+	storageBucket: "bram-codes-tests.appspot.com",
+	messagingSenderId: "774386697345"
+};
+firebase.initializeApp(config);
 
-admin.initializeApp({
-	credential: admin.credential.cert(config.service_account),
-	databaseURL: config.databaseURL
-});
-const db = admin.database();
+const db = firebase.database();
 
 winston.remove(winston.transports.Console);
 

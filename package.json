@@ -1,6 +1,6 @@
 {
 	"name": "firebase-winston",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"description": "A Firebase transport for Winston",
 	"main": "index.js",
 	"repository": "https://github.com/bram-codes/firebase-winston.git",
@@ -26,7 +26,7 @@
 	"devDependencies": {
 		"ava": "^0.25.0",
 		"codecov": "^3.0.2",
-		"firebase-admin": "^5.12.0",
+		"firebase": "^4.6.2",
 		"nyc": "^11.7.3"
 	}
 }
