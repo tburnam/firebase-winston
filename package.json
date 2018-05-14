@@ -1,8 +1,9 @@
 {
 	"name": "firebase-winston",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "A Firebase transport for Winston",
 	"main": "index.js",
+	"repository": "https://github.com/bram-codes/firebase-winston.git",
 	"author": "Bram <bram@bram.codes>",
 	"license": "MIT",
 	"keywords": [
