@@ -28,8 +28,8 @@ Firebase needs a key to store an object. If no `key` option is set, the current 
 If you do set the `key` option, all your logs that use the `FirebaseLogger` have to include a key/value in the metadata with that name.
 ```javascript
 winston.add(FirebaseLogger, {
-	ref: db.ref('logging'),
-	key: 'my_key'
+    ref: db.ref('logging'),
+    key: 'my_key'
 });
 
 winston.log('error', 'Something went wrong', { anything: 'This is metadata', my_key: 123 })
