@@ -1,7 +1,7 @@
 const winston = require('winston');
 const util = require('util');
 
-exports = module.exports = FirebaseLogger = function (options) {
+exports = module.exports = FirebaseLogger = winston.transports.FirebaseLogger = function (options) {
 	this.name = options.name || 'FirebaseLogger';
 	this.level = options.level || 'silly';
 	this.ref = options.ref || 'logs';
